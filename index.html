@@ -9,8 +9,8 @@
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
-            background-color: #000;
-            color: #fff;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
             overflow: hidden;
         }
         header {
@@ -34,7 +34,7 @@
             transition: color 0.3s, transform 0.3s;
         }
         nav a:hover {
-            color: #00ffcc;
+            color: #00ffcc; /* Teal on hover */
             transform: scale(1.1);
         }
         h1 {
@@ -73,7 +73,7 @@
             display: flex;
             overflow: hidden;
             position: relative;
-            height: 200px;
+            height: 300px; /* Increased height for better visibility */
             margin: 20px 0;
         }
         .carousel-inner {
@@ -85,13 +85,28 @@
             min-width: 100%;
             height: 100%;
             display: flex;
+            flex-direction: column; /* Align items vertically */
             justify-content: center;
             align-items: center;
-            color: #fff;
-            font-size: 2em;
+            color: #fff; /* White text */
+            font-size: 1.5em; /* Adjusted font size */
             position: relative;
             overflow: hidden;
             animation: fadeInUp 0.5s forwards;
+            padding: 20px; /* Padding for better text spacing */
+        }
+        .carousel-item:nth-child(1) {
+            background-color: #ff5733; /* Red */
+        }
+        .carousel-item:nth-child(2) {
+            background-color: #33aaff; /* Light Blue */
+        }
+        .carousel-item:nth-child(3) {
+            background-color: #555; /* Dark Grey */
+        }
+        .carousel-item:nth-child(4) {
+            background-color: #f3f3f3; /* Light Grey */
+            color: #000; /* Black text for better visibility */
         }
         .carousel-item::before {
             content: '';
@@ -122,11 +137,11 @@
         }
         .skill i {
             margin-right: 10px;
-            color: #00ffcc;
+            color: #00ffcc; /* Teal */
         }
         .skill:hover {
             transform: scale(1.2);
-            color: #00ffcc;
+            color: #00ffcc; /* Teal */
         }
         @keyframes fadeIn {
             from { opacity: 0; }
@@ -185,10 +200,27 @@
         <h2>Projects</h2>
         <div class="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item" style="background-color: #ff5733;">Project 1</div>
-                <div class="carousel-item" style="background-color: #33ff57;">Project 2</div>
-                <div class="carousel-item" style="background-color: #3357ff;">Project 3</div>
-                <div class="carousel-item" style="background-color: #f3ff33;">Project 4</div>
+                <div class="carousel-item">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>Description: I created a responsive portfolio website to showcase my skills, projects, and experiences.</p>
+                    <p>Technologies Used: HTML, CSS, JavaScript, and possibly a framework like React or Vue.js.</p>
+                </div>
+                <div class="carousel-item">
+                    <h3>Task Management App</h3>
+                    <p>Description: I developed a web application that allows users to create, manage, and track their tasks and to-do lists.</p>
+                    <p>Technologies Used: Node.js for the backend, MongoDB for the database, and React Native for mobile development.</p>
+                </div>
+                <div class="carousel-item">
+                    <h3>Orbital Blast</h3>
+                    <p>Description: Orbital Blast is an exciting gaming project featuring immersive roleplay and multiplayer maps. Players can explore vast environments and engage in thrilling battles.</p>
+                    <p>Technologies Used: Unreal Engine, C++, JavaScript.</p>
+                    <p>Status: Project in progress. <em>Coming Soon!</em></p>
+                </div>
+                <div class="carousel-item">
+                    <h3>Blog Platform</h3>
+                    <p>Description: I developed a blogging platform that allows users to create, edit, and comment on blog posts.</p>
+                    <p>Technologies Used: Ruby on Rails or Django for the backend, and React or Angular for the frontend.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -206,7 +238,7 @@
 
     <div class="section" id="contact">
         <h2>Contact</h2>
-        <p>Email: dbassey62@gmail.com</p>
+        <p>Email: <a href="mailto:dbassey62@gmail.com" style="color: #00ffcc;">dbassey62@gmail.com</a></p>
     </div>
 </body>
 </html>
